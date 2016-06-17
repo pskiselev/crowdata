@@ -9,9 +9,9 @@ def get_fb_token():
     #print file.text #to test the TOKEN
     return result
 
-#token = 'EAACEdEose0cBAGIXWEb03SS4XZC6yaeYosjf36LZB8UjoqrTLUwcYs2WZBQTGKqsA1fEW2UqP4Rd8OV5ubosNpM1ogeFVMKZCmQuutLjxrQnE8aDIYuikWr4rNc2w5ouxBNBYK0l0rwnk7ZBGHD8VC6fLuBnpgs100cLVQ04srQZDZD'
+token ="EAACEdEose0cBAGIXWEb03SS4XZC6yaeYosjf36LZB8UjoqrTLUwcYs2WZBQTGKqsA1fEW2UqP4Rd8OV5ubosNpM1ogeFVMKZCmQuutLjxrQnE8aDIYuikWr4rNc2w5ouxBNBYK0l0rwnk7ZBGHD8VC6fLuBnpgs100cLVQ04srQZDZD"
 
-graph = facebook.GraphAPI("EAACEdEose0cBAEuMEogZCk43GVMoArS1PEMirOZAabrrfRQxw0C5xz3LPZCVtywh4RCyzlOZANv1klzr1qpXHrka6AZAN87zFmbE9quVDbfNgKDL1kULskq5R1dntwDWTBN07dbNCvhwztG8hyQatN15zyFyD6nq2ukIVxqTVc5DCnTK3IMuBaupdZANBTd hqvXnEcmZCqyngZDZD")
+graph = facebook.GraphAPI(token)
 profile = graph.get_object("me")
 friends = graph.get_connections("me", "friends")
 graph.put_object("me", "feed", message="I am writing on my wall!")
