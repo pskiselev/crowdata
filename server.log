@@ -1,0 +1,5 @@
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+INFO:root:Is server=False
+INFO:werkzeug: * Running on http://127.0.0.1:50000/ (Press CTRL+C to quit)
