@@ -2,3 +2,6 @@
 /start
 /end
 /venv
+/.git
+/server.cfg
+/server.log
