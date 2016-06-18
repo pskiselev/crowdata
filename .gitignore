@@ -1,4 +1,4 @@
-/.gitignore
+/venv
 /start
 /end
 /server.cfg
